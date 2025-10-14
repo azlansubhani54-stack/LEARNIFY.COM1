@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learnify | All Courses</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+      padding: 10px 30px;
+      border-radius: 50px;
+      background: #fff;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #007bff;
+      margin-right: 15px;
+    }
+
+    .search-bar {
+      flex: 1;
+      position: relative;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px 20px;
+      border: 2px solid #007bff;
+      border-radius: 30px;
+      font-size: 1em;
+      outline: none;
+    }
+
+    /* Courses Section */
+    .courses {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .courses h2 {
+      font-size: 2.2em;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      align-items: start;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+      max-width: 280px;
+      text-align: center;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .course-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .course-card h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .course-card p {
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .course-card button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .course-card button:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-weight: 700;
+    }
+
+    .socials a {
+      color: #007bff;
+      margin: 0 10px;
+      text-decoration: none;
+      
+    }
+    .video-link {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #007bff, #00b4d8);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.video-link:hover {
+  background: linear-gradient(135deg, #0056b3, #0096c7);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.video-link:active {
+  transform: scale(0.98);
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Learnify</div>
+      <div class="search-bar">
+        <input type="text" id="searchInput" onkeyup="searchCourses()" placeholder="Search for a course...">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Courses -->
+  <section class="courses">
+    <h2>All Available Courses</h2>
+    <div class="course-grid" id="courseList">
+<div class="course-card"><img src="html.png"><h3>Html for structure</h3><p>make your website structure</p><a class="video-link" href="https://youtu.be/HD13eq_Pmp8?si=d84GJCf5VyPl4E59" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/k2DSi1zGEc8?si=o6qxpvBzG5JfeoaU" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="css.jpg"><h3>CSS Styling</h3><p>Make your websites beautiful with CSS.</p><a class="video-link" href="https://youtu.be/c26O1N3x6ug?si=ccVPLKiKAPcZhLe5" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/OpWjt_wbV4E?si=06uLsZ2vwdWgy7q3" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="javascript fundamental.jpg"><h3>JavaScript Fundamentals</h3><p>Learn logic and interactivity for web apps.</p><a class="video-link" href="https://youtu.be/A74TOX803D0?si=QXa-UN5IRl3sohBy" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/rV_3Lewxx6o?si=FFviFHf7XnAzf3DC" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="python.png"><h3>Python Programming</h3><p>Master Python for automation and data.</p><a class="video-link" href="https://youtu.be/ix9cRaBkVe0?si=QztHwiA_jWT-2nQC" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/sCOw5y1RQpY?si=bhEyZkjiYej5Pgsq" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="javascript.jfif"><h3>Java Programming</h3><p>Write efficient and scalable applications.</p><a class="video-link" href="#" target="_blank">🎬 Watch in English</a><a class="video-link" href="#" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="c++.avif"><h3>C++ Programming</h3><p>Learn object-oriented programming with C++.</p><a class="video-link" href="https://youtu.be/ZzaPdXTrSb8?si=i381Citr4SoNzlea" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/yGB9jhsEsr8?si=XsO-BPpWpHGqJc1d" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="react js.jpg"><h3>ReactJS</h3><p>Build modern web apps using React.</p><a class="video-link" href="https://youtu.be/4UZrsTqkcW4?si=bO0sZIFnGMipxfdX" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/ZaC6oCIpjR0?si=-Zd1ZqLzDROzANF8" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="nodes backend.webp"><h3>NodeJS Backend</h3><p>Create APIs and web servers using NodeJS.</p><a class="video-link" href="https://youtu.be/f2EqECiTBL8?si=AmZ18FVdFSU0OXp8" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/BLl32FvcdVM?si=g6yc2bsHfXXyi26m" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="pho.png"><h3>PHP Development</h3><p>Develop dynamic websites with PHP & MySQL.</p><a class="video-link" href="https://youtu.be/l4_Vn-sTBL8?si=ZyapOvuuUp1w1VXi" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/z8gIVootnUQ?si=djpfzMKFiX2Ed6NY" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="wordpress mastert.jfif"><h3>WordPress Mastery</h3><p>Create and manage websites easily with WordPress.</p><a class="video-link" href="#" target="_blank">🎬 Watch in English</a><a class="video-link" href="#" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="Flutter App Development.webp"><h3>Flutter App Development</h3><p>Build cross-platform apps for Android & iOS.</p><a class="video-link" href="https://youtu.be/VPvVD8t02U8?si=NuqFl7qjJAI8rxKh" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/1bQwDO88Gyw?si=nfl_pf8quj8vi46C" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="Android Development.png"><h3>Android Development</h3><p>Learn to create native Android applications.</p><a class="video-link" href="#" target="_blank">🎬 Watch in English</a><a class="video-link" href="#" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="ui design.jfif"><h3>UI/UX Design</h3><p>Design attractive and user-friendly interfaces.</p><a class="video-link" href="https://youtu.be/N-xuqy6x1Bw?si=5XKJ2ndKjbH6Xf9B" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://www.youtube.com/live/Hltyd0MTsZk?si=0li9VBPdbo3maWhe" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="Canva Design.jfif"><h3>Canva Design</h3><p>Create social media posts & posters easily.</p><a class="video-link" href="https://youtu.be/BLhoWAALKt0?si=QMq2bW2fREcsCz0a" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/yWJp7gQqCQ8?si=CnbylKkhFPwUplHr" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="photoshop.jfif"><h3>Photoshop Editing</h3><p>Edit professional graphics & images in Photoshop.</p><a class="video-link" href="https://youtu.be/xTzvQkOll2U?si=kqc7JygEqhvxXiiK" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/ZByhs9mDtDg?si=7pbdbMFWNRY6yNve" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="illustrature.png"><h3>Adobe Illustrator</h3><p>Design logos and vector illustrations.</p><a class="video-link" href="https://youtu.be/Ib8UBwu3yGA?si=fe4-VFuhcBv2_u7E" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/vd1vRpoWC3M?si=RBm2nvPRXDVVDg26" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="premium pro.png"><h3>Video Editing</h3><p>Edit videos like a pro with Premiere & CapCut.</p><a class="video-link" href="https://youtu.be/xDq3ij-oHJA?si=beCU5Sm84eCQ_uHa" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/h6eeDgBjZq8?si=mo3yw7Y8v2J-Zj9g" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="digital marketing.png"><h3>Digital Marketing</h3><p>Learn SEO, Google Ads, and social media marketing.</p><a class="video-link" href="https://youtu.be/h95cQkEWBx0?si=p4tw4g1dJS6t0eK9" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/G6DmDqYLWL8?si=m3ugBanSKHyihi8N" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="facebook ads.jfif"><h3>Facebook Ads</h3><p>Run successful ad campaigns on Facebook.</p><a class="video-link" href="https://youtu.be/WUjwfuhTdcA?si=umRSBp3EC_QC-qtk" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/-4c8L8z__ss?si=dIRNvjE3E8nXsxU5" target="_blank">🎥 Watch in Hindi</a></div>
+
+<div class="course-card"><img src="instagram marketing.png"><h3>Instagram Marketing</h3><p>Grow and monetize your Instagram account.</p><a class="video-link" href="https://youtu.be/h_uis-gVx0k?si=n4zJgWrV3398jtMv" target="_blank">🎬 Watch in English</a><a class="video-link" href="https://youtu.be/GG7yPV_-_1c?si=0zmyzMneyk_wDyNZ" target="_blank">🎥 Watch in Hindi</a></div>
+
+
+
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Learnify. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    function searchCourses() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const courses = document.querySelectorAll(".course-card");
+      let anyVisible = false;
+
+      courses.forEach(course => {
+        const title = course.querySelector("h3").textContent.toLowerCase();
+        if (title.includes(input)) {
+          course.style.display = "block";
+          anyVisible = true;
+        } else {
+          course.style.display = "none";
+        }
+      });
+
+      const existingMsg = document.getElementById("noResults");
+      if (!anyVisible) {
+        if (!existingMsg) {
+          const msg = document.createElement("p");
+          msg.id = "noResults";
+          msg.textContent = "No courses found 😕";
+          msg.style.marginTop = "20px";
+          msg.style.fontSize = "1.2em";
+          msg.style.color = "#666";
+          document.getElementById("courseList").appendChild(msg);
+        }
+      } else if (existingMsg) {
+        existingMsg.remove();
+      }
+    }
+  </script>
+
+</body>
+</html>

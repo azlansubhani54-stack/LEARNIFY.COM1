@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learnify | Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      background-color: #f5f7fa;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 1.6em;
+      font-weight: 700;
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 25px;
+    }
+
+    .sidebar a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      padding: 12px 25px;
+      transition: all 0.3s;
+      font-weight: 500;
+    }
+
+    .sidebar a i {
+      font-size: 18px;
+      margin-right: 10px;
+      color: #007bff;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 8px;
+    }
+
+    .sidebar a.active i {
+      color: #fff;
+    }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      padding: 30px;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">Learnify</div>
+    <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+    <a href="course.html"><i class="fas fa-book"></i> Courses</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+    <a href="#"><i class="fas fa-chart-line"></i> Analytics</a>
+    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Welcome to Learnify Dashboard</h1>
+    <p>Here you can manage all your courses and content easily.</p>
+  </div>
+
+</body>
+</html>
